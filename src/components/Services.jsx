@@ -12,12 +12,20 @@ const Services = () => {
 
       {/* Banner Section */}
       <div
-        className="flex sm:justify-start justify-center sm:items-center w-full h-[600px] bg-cover bg-center bg-no-repeat"
+        className="relative w-full h-[600px] bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${banner})` }}
       >
-        <h2 className="text-6xl flex font-bold text-center sm:text-start items-center text-white mb-12 sm:ps-20">
-          Services
-        </h2>
+        <div className="flex flex-col justify-center sm:items-start  items-center h-full w-full">
+          <h2 className="text-4xl sm:text-6xl font-bold text-center sm:text-start text-white mb-12 sm:ps-20">
+            Services
+          </h2>
+        </div>
+        {/* Shape Decoration */}
+        <img
+          src={shape}
+          alt="Shape"
+          className="absolute bottom-0 left-0 w-full"
+        />
       </div>
 
       {/* Services Section */}
@@ -193,11 +201,6 @@ const Services = () => {
         </div>
       </div>
 
-      <img
-        src={shape}
-        alt="Shape"
-        className="absolute bottom-[15px] left-0 w-full"
-      />
       {/* Footer */}
       <Footer />
     </>

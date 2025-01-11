@@ -72,11 +72,11 @@ const BestProducts = () => {
         <Slider {...settings}>
           {products.map((product, index) => (
             <div key={index} className="p-4">
-              <div className="bg-white rounded-lg w-60 h-80   transition-shadow duration-300">
+              <div className="  bg-white rounded-lg sm:w-60 h-80   transition-shadow duration-300 ">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-60 h-80 object-cover rounded-t-lg"
+                  className="sm:w-60 w-full h-80 object-cover rounded-t-lg"
                 />
               </div>
             </div>
